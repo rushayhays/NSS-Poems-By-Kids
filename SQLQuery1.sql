@@ -148,3 +148,12 @@ LEFT JOIN Gender g ON g.Id = a.GenderId
 GROUP BY g.Id, g.Name, e.Name
 HAVING e.Name = 'Fear'
 ORDER BY 'Poems by Gender';
+
+/*Lightning exercise*/
+SELECT * 
+FROM Author
+WHERE Name LIKE '%Alice%';
+
+SELECT COUNT(Id) AS 'Poems include horse'
+FROM Poem
+WHERE Text LIKE '%horse%';
